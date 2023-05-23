@@ -1,0 +1,28 @@
+
+
+#pager1 > div,
+#pager2 > div,
+#pager3 > div,
+#pager4 > div {	background:none !important;}
+
+.text4 {
+	letter-spacing:-3px;
+}
+
+.text5 {
+	letter-spacing:-1px;
+}
+
+.button1,
+#search input,
+.button2,
+.title1,
+.title2,
+.title3,
+.inner2,
+.inner7,
+.page2-box3,
+.button5,
+#form1 input,
+#form1 textarea
+{/* behavior:url(js/PIE.htc) ;*/position:relative}
