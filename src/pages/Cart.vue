@@ -33,7 +33,8 @@
   </div>
 </template>
   
-  <script>
+<script>
+import { mapState, mapGetters, mapMutations } from 'vuex';
 export default {
   data() {
     return {
@@ -61,6 +62,14 @@ export default {
       // Luego, puedes limpiar el carrito
       this.cart = [];
     },
+  },
+	computed: {
+    ...mapState(['cart']),
+    ...mapGetters(['cartTotalPrice']),
+  },
+  methods: {
+    ...mapMutations(['addToCart', 'removeFromCart', 'clearCart']),
+    // Resto de métodos del componente
   },
 };
 </script>
