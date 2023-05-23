@@ -14,10 +14,10 @@
           <div class="col-md-6">
             <h5>Enlaces</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Acerca de</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><router-link :to="'/'">Inicio</router-link></li>
+              <li><router-link :to="'/'">Acerca de</router-link></li>
+              <li><router-link :to="'/'">Servicios</router-link></li>
+              <li><router-link :to="'/contact'">Contacto</router-link></li>
             </ul>
           </div>
         </div>

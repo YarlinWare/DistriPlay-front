@@ -1,11 +1,10 @@
 <template>
   <div>
-    <!--==============================content================================-->
     <section class="row justify-content-center" id="content">
       <div class="content-box2">
         <SlideHome></SlideHome>
       </div>
-      <div class="main mb-5 pb-5 p7" style="background-color: #121212;margin-top: -2rem;">
+      <div class="col-12 col-sm-12 col-md-8 mb-5 pb-5 p7" style="margin-top: -2rem;">
         <LatestReleases/>
       </div>
     </section>

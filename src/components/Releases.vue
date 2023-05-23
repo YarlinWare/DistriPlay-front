@@ -1,13 +1,13 @@
 <template>
 	<div>
-			<div class="page1-box1">
-				<div class="inner1">
-					<figure class="page1-img2">
+			<div class="page1-box1 row">
+				<div class="col-12">
+					<figure class="">
 						<img :src="require(`@/assets/images/${data.imagen}`)" alt="" />
 					</figure>
 					<span>{{data.titulo}}</span>
 				</div>
-				<div class="inner2">
+				<div class="col-12">
 					<div class="inner3">
 						{{data.publicacion.editor}}, <span>{{data.publicacion.fecha}}</span>
 					</div>
@@ -16,7 +16,7 @@
 					</div>
 					<div class="clear"></div>
 				</div>
-				<div class="inner5">
+				<div class="inner5 col-12">
 					<p class="py-5 ">
 						{{data.descripcion}}
 						<a class="link3" :href="data.detalle"
