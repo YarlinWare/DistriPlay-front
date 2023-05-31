@@ -30,7 +30,7 @@ const Carrito = () => {
             listaVideojuegos
         }
         console.log("compra: ", compra);
-        axios.post('http://localhost:3080/compras', compra).then((response) => {
+        axios.post('https://distriplay-back.azurewebsites.net/compras', compra).then((response) => {
             localStorage.removeItem('cart');
             toast.success('Compra realizada con éxito', {
                 position: "bottom-center",

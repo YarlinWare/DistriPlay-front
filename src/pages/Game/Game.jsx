@@ -10,7 +10,7 @@ const Game = () => {
     const location = useLocation();
     const platform = location.pathname.split("/")[2];
     useEffect(() => {
-        axios.get(`http://localhost:3080/juegos/?plataforma=${platform}`).then((response) => {
+        axios.get(`https://distriplay-back.azurewebsites.net/juegos/?plataforma=${platform}`).then((response) => {
             console.log("data:",response.data);
             setGames(response.data);
         }

@@ -30,7 +30,7 @@ const Register = () => {
             contrasena2
         }
 
-        axios.post('http://localhost:3080/clientes', user).then((response) => {
+        axios.post('https://distriplay-back.azurewebsites.net/clientes', user).then((response) => {
             console.log(response);
             window.location.href = '/login';
         }

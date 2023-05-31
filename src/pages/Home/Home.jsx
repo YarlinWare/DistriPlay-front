@@ -18,19 +18,19 @@ const Home = (props) => {
     const [switchGames,setSwitchGames] = useState([]);
     const [pcGames,setPCGames] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:3080/juegos/?limit=10').then((response) => {
+        axios.get('https://distriplay-back.azurewebsites.net/juegos/?limit=10').then((response) => {
             setGames(response.data);
         });
-        axios.get('http://localhost:3080/juegos/?plataforma=PlayStation&limit=3').then((response) => {
+        axios.get('https://distriplay-back.azurewebsites.net/juegos/?plataforma=PlayStation&limit=3').then((response) => {
             setPSGames(response.data);
         });
-        axios.get('http://localhost:3080/juegos/?plataforma=Xbox&limit=3').then((response) => {
+        axios.get('https://distriplay-back.azurewebsites.net/juegos/?plataforma=Xbox&limit=3').then((response) => {
             setXGames(response.data);
         });
-        axios.get('http://localhost:3080/juegos/?plataforma=Nintendo%20Switch&limit=3').then((response) => {
+        axios.get('https://distriplay-back.azurewebsites.net/juegos/?plataforma=Nintendo%20Switch&limit=3').then((response) => {
             setSwitchGames(response.data);
         });
-        axios.get('http://localhost:3080/juegos/?plataforma=PC&limit=3').then((response) => {
+        axios.get('https://distriplay-back.azurewebsites.net/juegos/?plataforma=PC&limit=3').then((response) => {
             setPCGames(response.data);
         });
     }, []);

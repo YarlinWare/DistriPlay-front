@@ -16,7 +16,7 @@ const Admin = () => {
     }, []);
 
     const updateJuegos = () => {
-        axios.get('http://localhost:3080/juegos').then((res) => {
+        axios.get('https://distriplay-back.azurewebsites.net/juegos').then((res) => {
             console.log(res);
             setJuegos(res.data);
         }).catch((err) => {
@@ -50,7 +50,7 @@ const Admin = () => {
             productor
         }
         console.log("juego: ", juego);
-        axios.post('http://localhost:3080/juegos', juego).then((response) => {
+        axios.post('https://distriplay-back.azurewebsites.net/juegos', juego).then((response) => {
             console.log(response);
             updateJuegos();
             toast.success('Juego registrado con éxito', {
@@ -111,7 +111,7 @@ const Admin = () => {
 const JuegoItem = ({juego, updateJuegos}) => {
     const user = JSON.parse(localStorage.getItem('user'));
     const removeItem = (id) => {
-        axios.delete(`http://localhost:3080/juegos/`,{data:{userId: user.usuario, id}}).then((res) => {
+        axios.delete(`https://distriplay-back.azurewebsites.net/juegos/`,{data:{userId: user.usuario, id}}).then((res) => {
             console.log(res);
             updateJuegos();
         }).catch((err) => {

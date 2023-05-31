@@ -12,7 +12,7 @@ const Login = () => {
         event.preventDefault();
         const user = event.target.usernameField.value;
         const password = event.target.passwordField.value;
-        axios.post('http://localhost:3080/clientes/login', {
+        axios.post('https://distriplay-back.azurewebsites.net/clientes/login', {
             usuario: user,
             contrasena: password
         }).then((response) => {
