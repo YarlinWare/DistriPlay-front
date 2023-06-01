@@ -22,7 +22,7 @@ const Game = () => {
     return (
         <div>
             <Header />
-            <div className="GamesList">
+            <div className="GamesList ">
                 {games.map((game) => {
                     return <GameComponent game={game} key={game.id} />
                 }

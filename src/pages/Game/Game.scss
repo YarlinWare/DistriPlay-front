@@ -2,6 +2,9 @@
     width: 50%;
     background-color: white;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     &-Card{
         display: flex;
         flex-direction: row;
