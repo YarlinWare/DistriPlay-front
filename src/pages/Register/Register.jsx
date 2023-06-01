@@ -40,7 +40,7 @@ const Register = () => {
         axios.post('https://distriplay-back.azurewebsites.net/clientes', user)
             .then((response) => {
                 console.log(response);
-                window.location.href = '/login';
+                window.location.href = '/';
             })
             .catch((err) => {
                 console.log(err);
