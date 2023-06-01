@@ -50,35 +50,7 @@ const Home = (props) => {
                                     return <Game game={game} showPlataforma key={game.id}/>
                                 })}
                             </Col>
-                            <Col>
-                                <div className='GamesList-Block-Title'>
-                                    PlayStation
-                                </div>
-                                {psGames.map((game) => {
-                                    return <Game game={game} key={game.id} />
-                                })}
-                                <br/>
-                                <div className='GamesList-Block-Title'>
-                                    Xbox
-                                </div>
-                                {xGames.map((game) => {
-                                    return <Game game={game} key={game.id} />
-                                })}
-                                <br/>
-                                <div className='GamesList-Block-Title'>
-                                    Nintendo Switch
-                                </div>
-                                {switchGames.map((game) => {
-                                    return <Game game={game} key={game.id} />
-                                })}
-                                <br/>
-                                <div className='GamesList-Block-Title'>
-                                    PC
-                                </div>
-                                {pcGames.map((game) => {
-                                    return <Game game={game} key={game.id} />
-                                })}
-                            </Col>
+                            
                         </Row>
                     </Container>
                 </div>
